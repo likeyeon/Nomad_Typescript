@@ -10,7 +10,7 @@ type SuperPrintAny = {
 const superPrintAny: SuperPrintAny = (arr) => arr[0];
 
 const any = superPrintAny([1, "b"]); // const superPrintAny: (arr: any[]) => any
-any.toUpperCase(); // 실행 시 에러 발생
+any.toUpperCase(); // 런타임 과정에서 에러 발생
 
 // Generic 예시
 type SuperPrintRecap = {
@@ -20,7 +20,7 @@ type SuperPrintRecap = {
 const superPrintRecap: SuperPrintRecap = (arr) => arr[0];
 
 const recap = superPrintRecap([1, "b"]); // const superPrintRecap: <string | number>(arr: (string | number)[]) => string | number
-recap.toUpperCase(); // Generic의 경우 타입 체커로부터 보호받아 추후 발생할 에러를 방지할 수 있다.
+recap.toUpperCase(); // Generic의 경우 타입 체커로부터 보호받아 런타임 에러를 방지할 수 있다.
 
 // ✅ 복수의 Generic 선언 예시
 
