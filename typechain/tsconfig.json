@@ -5,7 +5,8 @@
     "outDir": "build",
     "target": "ES6",
     "lib": ["ES6", "dom"],
-    "strict": true
+    "strict": true,
+    "allowJs": true
   }
 }
 
@@ -25,3 +26,6 @@
 
 // ✅ strict
 // : true 설정 시, 타입스크립트로부터 보호를 받을 수 있음
+
+// ✅ allwoJs
+// : ts-check를 통해 JS Docs를 사용할 수 있도록 해줌
