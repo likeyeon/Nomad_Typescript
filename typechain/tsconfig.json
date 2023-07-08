@@ -4,7 +4,8 @@
   "compilerOptions": {
     "outDir": "build",
     "target": "ES6",
-    "lib": ["ES6", "dom"]
+    "lib": ["ES6", "dom"],
+    "strict": true
   }
 }
 
@@ -21,3 +22,6 @@
 // 프로그램이 브라우저에서 실행되면 lib에 "DOM" 유형 정의를 할 수 있다.
 // DOM: window, document 등
 // ex) "lib": ["ES6","DOM"]
+
+// ✅ strict
+// : true 설정 시, 타입스크립트로부터 보호를 받을 수 있음

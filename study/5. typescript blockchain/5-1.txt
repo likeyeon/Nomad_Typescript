@@ -9,7 +9,12 @@ npm init -y
 npm run build를 입력해주면, tsc가 작동
 
 ✔️ tsconfig.json설정
-디렉터리에 tsconfig.json 파일이 있으면 해당 디렉터리가 TypeScript 프로젝트의 루트임을 나타낸다. 
-tsconfig.json 파일은 프로젝트를 컴파일하는 데 필요한 루트 파일과 컴파일러 옵션을 지정한다.
+- 디렉터리에 tsconfig.json 파일이 있으면 해당 디렉터리가 TypeScript 프로젝트의 루트임을 나타낸다. 
+- tsconfig.json 파일은 프로젝트를 컴파일하는 데 필요한 루트 파일과 컴파일러 옵션을 지정한다.
 https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#handbook-content
 
+✔️ 타입 정의 (type definition)
+: 타입스크립트에게 몇몇 자바스크립트 코드의 타입을 설명해 주기 위해 사용하는 것
+- npm으로부터 자바스크립트 패키지를 받거나, node_modlues에 있는 자바스크립트 모듈을 사용할 수 있음
+- Declaration file 을 생성하여 타입 정의를 서술하여 사용할 수 있음
+(ex) myPackage.d.ts 파일을 생성 - declare module "패키지 이름"으로 코드의 타입에 대해 서술 - import를 통해 가져와서 사용
