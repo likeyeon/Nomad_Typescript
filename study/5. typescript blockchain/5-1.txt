@@ -1,0 +1,15 @@
+✔️ typescript설치
+npm i -D typescript
+
+✔️ package.json 초기화
+npm init -y
+
+✔️ "build": "tsc" 추가 
+(타입스크립트 컨파일러 스크립트)
+npm run build를 입력해주면, tsc가 작동
+
+✔️ tsconfig.json설정
+디렉터리에 tsconfig.json 파일이 있으면 해당 디렉터리가 TypeScript 프로젝트의 루트임을 나타낸다. 
+tsconfig.json 파일은 프로젝트를 컴파일하는 데 필요한 루트 파일과 컴파일러 옵션을 지정한다.
+https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#handbook-content
+
