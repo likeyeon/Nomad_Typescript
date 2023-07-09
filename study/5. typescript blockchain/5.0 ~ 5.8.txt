@@ -18,3 +18,18 @@ https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#handbook-content
 - npm으로부터 자바스크립트 패키지를 받거나, node_modlues에 있는 자바스크립트 모듈을 사용할 수 있음
 - Declaration file 을 생성하여 타입 정의를 서술하여 사용할 수 있음
 (ex) myPackage.d.ts 파일을 생성 - declare module "패키지 이름"으로 코드의 타입에 대해 서술 - import를 통해 가져와서 사용
+
+✔️ ts-node
+npm i -D ts-node
+ts-node는 Node.js용 타입스크립트 실행 엔진 및 REPL이다. 
+JIT는 TypeScript를 JavaScript로 변환하므로 사전 컴파일 없이 Node.js에서 TypeScript를 직접 실행할 수 있다.
+
+✔️ nodemon
+npm i nodemon -D
+nodemon 설치하면 자동으로 커맨드를 재실행해줘서 일일히 커맨드를 다시 실행할 필요가 없어짐
+
+✔️ DefinitelyTyped
+TypeScript type 정의를 위한 리포지토리
+https://github.com/DefinitelyTyped/DefinitelyTyped
+@types/node
+npm i @types/node -D
